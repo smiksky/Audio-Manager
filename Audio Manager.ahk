@@ -20,7 +20,8 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 Version History:
 
 1.0 - 10/25/2020 - Initial release
-1.0.1 - 10/26/2020 - Updated About page
+1.0.1 - 10/26/2020 - Updated about page
+1.0.2 - 10/26/2020 - Initial Github release, updated included license and about
 */
 
 #NoEnv
@@ -40,7 +41,7 @@ Menu, Tray, Click, 1
 FileInstall, AudioManager.ico, AudioManager.ico
 FileInstall, Default.ico, Default.ico
 FileInstall, DefaultCom.ico, DefaultCom.ico
-FileInstall, COPYING.txt, COPYING.txt
+FileInstall, LICENSE.txt, LICENSE.txt
 
 Gosub Initialize
 
@@ -216,9 +217,10 @@ About:
 	Gui, New, -MaximizeBox -MinimizeBox
 	Gui, Add, Picture, w64 h-1, AudioManager.ico
 	Gui, Add, Text, ys, Audio Manager by Scott Mikutsky
-	Gui, Add, Text, yp+16, Version 1.0.1
-	Gui, Add, Link, yp+16, <a href="mailto:smikutsky@gmail.com">smikutsky@gmail.com</a>
+	Gui, Add, Text, yp+16, Version 1.0.2
 	Gui, Add, Text, yp+16, Copyright © 2020
+	Gui, Add, Link, yp+16, <a href="https://github.com/smikutsky/Audio-Manager">https://github.com/smikutsky/Audio-Manager</a>
+	Gui, Add, Link, yp+16, <a href="mailto:smikutsky@gmail.com">smikutsky@gmail.com</a>
 	Gui, Add, Text, xs W300, This software uses the Vista Audio library by Lexikos 
 	Gui, Add, Text, W300, This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 	Gui, Add, Text, W300, This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
